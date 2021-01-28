@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="../static/style.css">
+
+    <title>Nemoland pro pro master</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h1>Healthy or Infected? (Made by Nemo)</h1>
+        </div>
+        <div class="row">
+            <p>Tomato diseases classifier 
+                Possible detection include:
+                 -Tomato___Bacterial_spot
+                 -Tomato___Early_blight
+                 -Tomato___Late_blight
+                 -Tomato___Leaf_Mold
+                 -Tomato___Septoria_leaf_spot
+                 -Tomato___Spider_mites Two-spotted_spider_mite
+                 -Tomato___Target_Spot
+                 -Tomato___Tomato_Yellow_Leaf_Curl_Virus
+                 -Tomato___Tomato_mosaic_virus
+                 -Tomato___healthy
+            </p>
+        </div>
+        <div class="row">
+            <p>Just upload an image from your computer and
+                it will be classified!!!
+            </p>
+
+        </div>
+        <div class="row">
+            <h2>Uploader</h2>
+        </div>
+        <div class="row">
+            <img id="uploadedImg">
+        </div>
+
+        <div class="row">
+            <form enctype="multipart/form-data" method="POST" name="fileinfo">
+                <label>Upload your image:</label>
+                <input type="file" name="file" required />
+                <input type="submit" value="Classify!" />
+            </form>
+    
+        </div>
+        <div class="row">
+   
+            <h2>Results</h2>
+            <div id="loader" class="lds-dual-ring"></div>
+        </div>
+        <div id="results" class="grid-container">
+        </div>
+    </div>
+
+
+
+<img id="Nemo" src="https://image.myanimelist.net/ui/6T-vq19E3Y26WyKRFadZie1x-291IR_q5K-5IcmFRuCAd8NmVj8aket_eJ7AaX_MAgwvJ4GSqZA0Hi72m7b3s7ezyfba_Ua9KfAgV17bgg0">
+    <script src="../static/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>
